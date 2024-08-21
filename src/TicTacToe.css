@@ -1,5 +1,6 @@
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(183, 183, 231); 
 }
 .container{
    display: flex;
@@ -10,10 +11,11 @@
    align-items: center;
    margin: auto;
    margin-top: 20vh;
+
 }
 
 .square {
-    border: 1px solid red;
+    border: 1px solid gray;
     /* float: left; */
     font-size: 40px;
     width: 100px;
@@ -27,6 +29,7 @@
     /* display: flex;
     justify-content: center;
     align-items: center; */
+    background-color: rgb(204, 230, 253);
 
 }
 .row {
@@ -39,6 +42,8 @@
     padding: 10px 20px;
     font-size: 20px;
     border: none;
-    border-radius: 15px;
+    border-radius: 10px;
     cursor: pointer;
+    background-color: rgb(162, 243, 218);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'sans-serif';
 }

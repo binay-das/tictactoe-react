@@ -14,7 +14,7 @@ export default function TicTacToe() {
     // fill(value, start, end)
 
     let [isXTurn, setIsXTurn] = useState(true);
-    let [status, setStatus] = useState("");
+    let [status, setStatus] = useState("Player X will start");
 
     let handleClick = (getCurrSquare) => {
         console.log(squares);
@@ -47,7 +47,7 @@ export default function TicTacToe() {
 
     // useEffect(() => {
     //     setStatus("Player X will start");
-    // });
+    // }, []);
 
     useEffect(() => {
         if (!getWinner(squares) && squares.every(item => item!== "")){
@@ -59,12 +59,18 @@ export default function TicTacToe() {
         else {
             setStatus(`Next player is ${isXTurn ? "X" : "O"}`);
         }
-    }, [squares, isXTurn])
+    }, [squares, isXTurn]);
+
+    useEffect(() => {
+        setStatus("Player X will start");
+    }, []);
 
     let handleReset = () =>{
         setSquares(Array(9).fill(""));
         setIsXTurn(true);
         // setSquares("");
+
+        setStatus("Player X will start");
     }
 
     return (
