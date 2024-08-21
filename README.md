@@ -6,10 +6,10 @@ The game logic checks for a winner after every move by comparing the current sta
 
 ## Features
 ### Real-time Gameplay: 
-    The game dynamically updates to display the current player's turn and announces the winner or a draw.
+The game dynamically updates to display the current player's turn and announces the winner or a draw.
 ### Easy Reset: 
-    Start a new game anytime with the reset button, which resets the board and starts with Player X.
+Start a new game anytime with the reset button, which resets the board and starts with Player X.
 
 ## Tech Stack
 ### React: 
-    The game is built using React for its powerful state management and component-based architecture.
+The game is built using React for its powerful state management and component-based architecture.
